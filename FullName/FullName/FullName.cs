@@ -16,6 +16,15 @@ namespace FullName
             _persons.Add(person);
             
         }
-       
+        public static void ShowFullNames()
+        {
+            int i = 0;
+            foreach (var person in _persons)
+            {
+
+                Console.Write(++i + ":");
+                person.GetFullName();
+            }
+        }
     }
 }

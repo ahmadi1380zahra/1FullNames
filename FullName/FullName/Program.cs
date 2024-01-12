@@ -21,7 +21,7 @@ namespace FullName
             }
             static void Run()
             {
-                var option = GetInt("1.add person");
+                var option = GetInt("1.add person  \n 2.show all");
                 switch (option)
                 {
                     case 1:
@@ -31,7 +31,11 @@ namespace FullName
                             FullName.AddFullName(firstName,lastName);
                             break;
                         }
-                   
+                    case 2:
+                        {
+                            FullName.ShowFullNames();
+                            break;
+                        }
                 }
             }
         }
